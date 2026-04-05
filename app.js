@@ -4,6 +4,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 // Ruta raíz
 app.get('/', (req, res) => {
